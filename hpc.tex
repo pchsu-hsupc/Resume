@@ -127,7 +127,16 @@
   \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------------
+%-----------THESIS-----------------
+\section{Thesis}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Feature Alignment and Compositional Token for Human Pose Estimation}
+      {Video-based 2D human pose estimation faces challenges such as motion blur, self-occlusions, and body parts extending beyond image boundaries. 
+      Existing heatmap-based methods leverage temporal information but struggle to model structural dependencies between human joints, leading to discontinuous or unrealistic predictions.
+      FACT-Pose integrate spatiotemporal feature alignment and compositional token representations to robustly capture motion cues and joint dependencies, effectively addressing challenges like motion blur and occlusions.}
+  \resumeSubHeadingListEnd
+
+%-----------COURSES-----------------
 \section{Courses}
   \resumeSubHeadingListStart
     \resumeSubItem{Physical Design Automation}
@@ -145,15 +154,23 @@
       Utilized different Open MPI communication functions.
       Implemented and benchmarked CUDA image processing kernels.
       Optimizing image convolution using OpenCL.
+      Converted a C++ ray tracing algorithm to CUDA to leverage GPU parallelism.
       }
     \resumeSubItem{Software Testing}
-      {dddd}
+      {Engineered tests using unittest with mock, spies, and exception handling.
+      Developed web surfing automation scripts with Selenium.
+      Implemented an LLVM Pass to trace function calls by injecting code at entry/exit points, tracking call depth via global variables, and formatting output with indentation to visualize call hierarchy.
+      Analyzing Address Sanitizer and Valgrind across different memory error scenarios.
+      American Fuzzy Lop for fuzz testing and Angr for symbolic execution.}
     \resumeSubItem{Cloud Native Development}
       {Developed Flask user microservice with RESTful API and integrated MongoDB for data persistence.
-      Implemented tests using Python unittest and Jest. Deployed and managed microservices with Docker Swarm.
-      }
-    \resumeSubItem{Device Driver Programming}
+      Implemented tests using Python unittest and Jest. Deployed and managed microservices with Docker Swarm.}
+    \resumeSubItem{Network Programming}
       {ddd}
+    \resumeSubItem{Pattern Recognition}
+      {}
+    \resumeSubItem{Image Processing}
+      {}
   \resumeSubHeadingListEnd
 
 %--------SKILLS------------
@@ -162,7 +179,7 @@
   \resumeSubItem{Languages}
     {C, C++, Python, CUDA}
   \resumeSubItem{Tools}
-    {GDB, Wireshark, Git, Docker, WinDbg}
+    {GDB, Wireshark, Git, Docker, WinDbg, GitHub Actions, Valgrind, Address Sanitizer, LLVM}
   \resumeSubItem{Frameworks}
     {PyTorch}
   \resumeSubItem{Operating Systems}
