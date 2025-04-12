@@ -50,7 +50,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{\\ #2 \vspace{-4pt}}
+    \textbf{#1}{\\ #2 \vspace{-2pt}}
   }
 }
 
@@ -123,9 +123,17 @@
         \resumeItem{Driver Development - Sniffer Mode}
           {Extracted information from RX descriptors. Incorporated Radiotap and PCAP headers for advanced packet analysis. Established robust packet receiving and transmission workflows in sniffer mode to aid in network monitoring and debugging.}
       \resumeItemListEnd
+    
+    \resumeSubheading
+      {National Yang Ming Chiao Tung University}{Hsinchu, TW}
+      {Teaching Assistant}{Sep 2022 -- Jun 2024}
+      \resumeItemListStart
+        \resumeItem{Embedded Systems Capstone}{}
+        \resumeItem{IoT Devices and Platforms}{}
+        \resumeItem{Graph Theory}{}
+      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
 
 %-----------THESIS-----------------
 \section{Thesis}
@@ -162,13 +170,13 @@
       Implemented an LLVM Pass to trace function calls by injecting code, tracking call depth via global variables, and formatting output with indentation to visualize call hierarchy.
       Analyzing Address Sanitizer and Valgrind across different memory error scenarios.
       American Fuzzy Lop for fuzz testing and Angr for symbolic execution.}
-    \resumeSubItem{Cloud Native Development}
-      {Developed Flask user microservice with RESTful API and integrated MongoDB for data persistence.
-      Implemented tests using Python unittest and Jest. Deployed and managed microservices with Docker Swarm.}
-      \resumeSubItem{Network Programming}
-      {Concurrent connection-oriented server to handle multiple clients with chat-like shell using FIFO, Shared Memory, and Socket.
-       CGI program leveraging Boost.Asio to asynchronously process data received from various servers.
-       SOCKS 4/4A server as a proxy server combining with CGI program and simple firewall rules.}
+    %\resumeSubItem{Cloud Native Development}
+    %  {Developed Flask user microservice with RESTful API and integrated MongoDB for data persistence.
+    %  Implemented tests using Python unittest and Jest. Deployed and managed microservices with Docker Swarm.}
+    %\resumeSubItem{Network Programming}
+    %  {Concurrent connection-oriented server to handle multiple clients with chat-like shell using FIFO, Shared Memory, and Socket.
+    %  CGI program leveraging Boost.Asio to asynchronously process data received from various servers.
+    %  SOCKS 4/4A server as a proxy server combining with CGI program and simple firewall rules.}
   \resumeSubHeadingListEnd
 
 %--------SKILLS------------
@@ -177,7 +185,9 @@
   \resumeSubItem{Languages \& Frameworks}
     {C, C++, Python, CUDA, PyTorch}
   \resumeSubItem{Tools \& Technologies}
-    {GDB, Wireshark, Git, Docker, WinDbg, GitHub Actions, Valgrind, Address Sanitizer, LLVM, Linux, Unix, Socket, Shell, Makefile, Boost.Asio, OpenMP, Open MPI, OpenCL, Pthread, gprof, Selenium, Jest}
+    {GDB, Wireshark, Git, WinDbg, GitHub Actions, Valgrind, LLVM,
+     Linux, Unix, Socket, Shell, Makefile, Boost.Asio, OpenMP, Open MPI, OpenCL, Pthread, gprof, Selenium,
+     Flask, RESTful, Jest, Docker, Docker Swarm, MongoDB}
   \resumeSubHeadingListEnd
 
 %-------------------------------------------
