@@ -50,7 +50,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{\\ #2 \vspace{-4pt}}
   }
 }
 
@@ -131,9 +131,9 @@
 \section{Thesis}
   \resumeSubHeadingListStart
     \resumeSubItem{Feature Alignment and Compositional Token for Human Pose Estimation}
-      {Video-based 2D human pose estimation faces challenges such as motion blur, self-occlusions, and body parts extending beyond image boundaries. 
-      Existing heatmap-based methods leverage temporal information but struggle to model structural dependencies between human joints, leading to discontinuous or unrealistic predictions.
-      FACT-Pose integrate spatiotemporal feature alignment and compositional token representations to robustly capture motion cues and joint dependencies, effectively addressing challenges like motion blur and occlusions.}
+      {Video-based 2D human pose estimation struggles with motion blur, occlusions, and truncated body parts. 
+       While heatmap-based methods use temporal cues, they often miss the joint dependencies, causing unrealistic poses. 
+       We resolves this by combining spatiotemporal alignment with token representations to robustly capture motion and joint relations.}
   \resumeSubHeadingListEnd
 
 %-----------COURSES-----------------
@@ -159,31 +159,25 @@
     \resumeSubItem{Software Testing}
       {Engineered tests using unittest with mock, spies, and exception handling.
       Developed web surfing automation scripts with Selenium.
-      Implemented an LLVM Pass to trace function calls by injecting code at entry/exit points, tracking call depth via global variables, and formatting output with indentation to visualize call hierarchy.
+      Implemented an LLVM Pass to trace function calls by injecting code, tracking call depth via global variables, and formatting output with indentation to visualize call hierarchy.
       Analyzing Address Sanitizer and Valgrind across different memory error scenarios.
       American Fuzzy Lop for fuzz testing and Angr for symbolic execution.}
     \resumeSubItem{Cloud Native Development}
       {Developed Flask user microservice with RESTful API and integrated MongoDB for data persistence.
       Implemented tests using Python unittest and Jest. Deployed and managed microservices with Docker Swarm.}
-    \resumeSubItem{Network Programming}
-      {ddd}
-    \resumeSubItem{Pattern Recognition}
-      {}
-    \resumeSubItem{Image Processing}
-      {}
+      \resumeSubItem{Network Programming}
+      {Concurrent connection-oriented server to handle multiple clients with chat-like shell using FIFO, Shared Memory, and Socket.
+       CGI program leveraging Boost.Asio to asynchronously process data received from various servers.
+       SOCKS 4/4A server as a proxy server combining with CGI program and simple firewall rules.}
   \resumeSubHeadingListEnd
 
 %--------SKILLS------------
 \section{Skills}
   \resumeSubHeadingListStart
-  \resumeSubItem{Languages}
-    {C, C++, Python, CUDA}
-  \resumeSubItem{Tools}
-    {GDB, Wireshark, Git, Docker, WinDbg, GitHub Actions, Valgrind, Address Sanitizer, LLVM}
-  \resumeSubItem{Frameworks}
-    {PyTorch}
-  \resumeSubItem{Operating Systems}
-    {Linux, Unix, Socket, Shell, Makefile, Boost}
+  \resumeSubItem{Languages \& Frameworks}
+    {C, C++, Python, CUDA, PyTorch}
+  \resumeSubItem{Tools \& Technologies}
+    {GDB, Wireshark, Git, Docker, WinDbg, GitHub Actions, Valgrind, Address Sanitizer, LLVM, Linux, Unix, Socket, Shell, Makefile, Boost.Asio, OpenMP, Open MPI, OpenCL, Pthread, gprof, Selenium, Jest}
   \resumeSubHeadingListEnd
 
 %-------------------------------------------
