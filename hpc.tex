@@ -103,7 +103,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {National Yang Ming Chiao Tung University}{Hsinchu, TW}
-      {Master of Science in Computer Science; GPA: 4.18}{Sep 2022 -- Jun 2025}
+      {Master of Science in Computer Science; GPA: 4.18 / 4.3}{Sep 2022 -- Jun 2025}
     \resumeSubheading
       {National Yunlin University of Science and Technology}{Yunlin, TW}
       {Bachelor of Science in Computer Science; GPA: 3.65}{Sep 2017 -- Jun 2022}
@@ -130,7 +130,7 @@
       \resumeItemListStart
         \resumeItem{Embedded Systems Capstone}{}
         \resumeItem{IoT Devices and Platforms}{}
-        \resumeItem{Graph Theory}{}
+        \resumeItem{Discrete Mathematics}{}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -145,31 +145,36 @@
   \resumeSubHeadingListEnd
 
 %-----------COURSES-----------------
-\section{Courses}
+% make courses to looks like projects
+\section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Physical Design Automation}
-      {Circuit partitioning using the Fiduccia–Mattheyses heuristic to balance module sizes and minimize interconnections. 
-        Chip floorplanning with simulated annealing and B*-trees for optimized area and wirelength.
-        Standard cell layout through Euler path methods to maximize diffusion sharing and reduce total HPWL.
-        Channel routing employing a dogleg routing algorithm to efficiently place tracks and vias.}
-    \resumeSubItem{Parallel Programming}
-      {Used pseudo SIMD intrinsics to simulate array exponential calculations and array sum operations.
-      Guiding automatic loop vectorization using AVX2-specific compiler options and code hints. 
-      Monte Carlo method to estimate Pi using Pthread. 
-      Generating the Mandelbrot set using std::thread and analyzing.
-      Profiled application performance with gprof.
-      Parallelized Page Rank algorithm, Direction-Optimizing Breadth-First Search algorithm using OpenMP.
-      Utilized different Open MPI communication functions.
-      Implemented and benchmarked CUDA image processing kernels.
-      Optimizing image convolution using OpenCL.
-      Converted a C++ ray tracing algorithm to CUDA to leverage GPU parallelism.
-      }
-    \resumeSubItem{Software Testing}
-      {Engineered tests using unittest with mock, spies, and exception handling.
-      Developed web surfing automation scripts with Selenium.
-      Implemented an LLVM Pass to trace function calls by injecting code, tracking call depth via global variables, and formatting output with indentation to visualize call hierarchy.
-      Analyzing Address Sanitizer and Valgrind across different memory error scenarios.
-      American Fuzzy Lop for fuzz testing and Angr for symbolic execution.}
+    %\resumeSubItem{Physical Design Automation}
+      %{Circuit partitioning using the Fiduccia–Mattheyses heuristic to balance module sizes and minimize interconnections. 
+        %Chip floorplanning with simulated annealing and B*-trees for optimized area and wirelength.
+        %Standard cell layout through Euler path methods to maximize diffusion sharing and reduce total HPWL.
+        %Channel routing employing a dogleg routing algorithm to efficiently place tracks and vias.}
+    %\resumeSubItem{Parallel Programming}
+      %{Used pseudo SIMD intrinsics to simulate array exponential calculations and array sum operations.
+      %Guiding automatic loop vectorization using AVX2-specific compiler options and code hints. 
+      %Monte Carlo method to estimate Pi using Pthread. 
+      %Generating the Mandelbrot set using std::thread and analyzing.
+      %Profiled application performance with gprof.
+      %Parallelized Page Rank algorithm, Direction-Optimizing Breadth-First Search algorithm using OpenMP.
+      %Utilized different Open MPI communication functions.
+      %Implemented and benchmarked CUDA image processing kernels.
+      %Optimizing image convolution using OpenCL.
+      %Converted a C++ ray tracing algorithm to CUDA to leverage GPU parallelism.
+      %}
+    \resumeSubItem{Ray Tracing Algorithm in CUDA}
+      {}
+    \resumeSubItem{Event Management Platform}
+      {}
+    %\resumeSubItem{Software Testing}
+      %{Engineered tests using unittest with mock, spies, and exception handling.
+      %Developed web surfing automation scripts with Selenium.
+      %Implemented an LLVM Pass to trace function calls by injecting code, tracking call depth via global variables, and formatting output with indentation to visualize call hierarchy.
+      %Analyzing Address Sanitizer and Valgrind across different memory error scenarios.
+      %American Fuzzy Lop for fuzz testing and Angr for symbolic execution.}
     %\resumeSubItem{Cloud Native Development}
     %  {Developed Flask user microservice with RESTful API and integrated MongoDB for data persistence.
     %  Implemented tests using Python unittest and Jest. Deployed and managed microservices with Docker Swarm.}
@@ -182,10 +187,15 @@
 %--------SKILLS------------
 \section{Skills}
   \resumeSubHeadingListStart
-  \resumeSubItem{Languages \& Frameworks}
-    {C, C++, Python, CUDA, PyTorch}
-  \resumeSubItem{Tools \& Technologies}
-    {GDB, Wireshark, Git, WinDbg, GitHub Actions, Valgrind, LLVM,
+  \resumeSubItem{Languages}
+    {Mandarin, English, Norwegian}
+  \resumeSubItem{Courses}
+    {
+      Physical Design Automation, Parallel Programming, Software Testing, Cloud Native Development, Network Programming,
+      Edge AI
+    }
+  \resumeSubItem{Keywords}
+    {C, C++, Python, CUDA, PyTorch, GDB, Wireshark, Git, WinDbg, GitHub Actions, Valgrind, LLVM,
      Linux, Unix, Socket, Shell, Makefile, Boost.Asio, OpenMP, Open MPI, OpenCL, Pthread, gprof, Selenium,
      Flask, RESTful, Jest, Docker, Docker Swarm, MongoDB}
   \resumeSubHeadingListEnd
