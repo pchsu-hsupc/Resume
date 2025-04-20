@@ -93,8 +93,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://github.com/Tommy-Hsu}{\Large Po-Chi, Hsu}} & Email: \href{mailto:hpc880214@gmail.com}{hpc880214@gmail.com}\\
-  \href{https://github.com/Tommy-Hsu}{https://github.com/Tommy-Hsu} & Mobile: \href{tel:+886912129381}{+886-912-129-381} \\
+  \textbf{\href{https://github.com/pchsu0214}{\Large Po-Chi, Hsu}} & Email: \href{mailto:hpc880214@gmail.com}{hpc880214@gmail.com}\\
+  \href{https://github.com/pchsu0214}{https://github.com/pchsu0214} & Mobile: \href{tel:+886912129381}{+886-912-129-381} \\
 \end{tabular*}
 
 
@@ -103,10 +103,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {National Yang Ming Chiao Tung University}{Hsinchu, TW}
-      {Master of Science in Computer Science; GPA: 4.18 / 4.3}{Sep 2022 -- Jun 2025}
+      {Master of Science in Computer Science | GPA 4.18 / 4.30}{Sep 2022 -- Now}
     \resumeSubheading
       {National Yunlin University of Science and Technology}{Yunlin, TW}
-      {Bachelor of Science in Computer Science; GPA: 3.65}{Sep 2017 -- Jun 2022}
+      {Bachelor of Science in Computer Science | GPA 3.65}{Sep 2017 -- Jun 2022}
   \resumeSubHeadingListEnd
 
 
@@ -119,14 +119,14 @@
       {Software Engineer Intern (Windows Wi-Fi Driver)}{July 2023 -- Aug 2023}
       \resumeItemListStart
         \resumeItem{Driver Development - Efuse}
-          {Implemented driver operations to read and write efuse, configuring and managing internal circuit parameters. Patched event handling mechanisms to ensure process stability and accuracy.}
+          {Implemented driver operations for reading and writing efuse, configuring and managing internal circuit parameters. Patched event handling mechanisms to ensure process stability and accuracy.}
         \resumeItem{Driver Development - Sniffer Mode}
           {Extracted information from RX descriptors. Incorporated Radiotap and PCAP headers for advanced packet analysis. Established robust packet receiving and transmission workflows in sniffer mode to aid in network monitoring and debugging.}
       \resumeItemListEnd
     
     \resumeSubheading
       {National Yang Ming Chiao Tung University}{Hsinchu, TW}
-      {Teaching Assistant}{Sep 2022 -- Jun 2024}
+      {Teaching Assistants}{Sep 2022 -- Jun 2024}
       \resumeItemListStart
         \resumeItem{Embedded Systems Capstone}{}
         \resumeItem{IoT Devices and Platforms}{}
@@ -141,7 +141,7 @@
     \resumeSubItem{Feature Alignment and Compositional Token for Human Pose Estimation}
       {Video-based 2D human pose estimation struggles with motion blur, occlusions, and truncated body parts. 
        While heatmap-based methods use temporal cues, they often miss the joint dependencies, causing unrealistic poses. 
-       We resolves this by combining spatiotemporal alignment with token representations to robustly capture motion and joint relations.}
+       We resolve this by combining spatiotemporal alignment with token representations to robustly capture motion and joint relations.}
   \resumeSubHeadingListEnd
 
 %-----------COURSES-----------------
@@ -165,10 +165,15 @@
       %Optimizing image convolution using OpenCL.
       %Converted a C++ ray tracing algorithm to CUDA to leverage GPU parallelism.
       %}
-    \resumeSubItem{Ray Tracing Algorithm in CUDA}
-      {}
+    \resumeSubItem{Ported a Modern C++ ray‑tracing engine to CUDA}
+      {Refactoring CPU std::vector usage into custom GPU pointer‑to‑pointer structures 
+       and rewriting the recursive pixel‑reflection routine as an iterative algorithm to prevent GPU stack overflows.
+       Provides a 12x speedup over a single-threaded CPU, and 6x speedup over OpenMP/Pthreads in high-resolution (4K/8K) rendering workflows.}
     \resumeSubItem{Event Management Platform}
-      {}
+      {Developed a Flask-based user authentication microservice with RESTful APIs for an event management platform, enabling user registration, login, and logout.
+      Integrated MongoDB for secure and scalable data persistence.
+      Implemented unit and integration tests using Python’s unittest and JavaScript's Jest to ensure API reliability. 
+      Deployed and orchestrated microservices using Docker Swarm for efficient scalability and maintainability.}  
     %\resumeSubItem{Software Testing}
       %{Engineered tests using unittest with mock, spies, and exception handling.
       %Developed web surfing automation scripts with Selenium.
@@ -188,16 +193,16 @@
 \section{Skills}
   \resumeSubHeadingListStart
   \resumeSubItem{Languages}
-    {Mandarin, English, Norwegian}
+    {Mandarin (Native Language), English, Norwegian}
   \resumeSubItem{Courses}
     {
-      Physical Design Automation, Parallel Programming, Software Testing, Cloud Native Development, Network Programming,
+      Physical Design Automation (A+), Parallel Programming (A+), Software Testing (A+), Cloud Native Development (A+), Network Programming (A+),
       Edge AI
     }
   \resumeSubItem{Keywords}
     {C, C++, Python, CUDA, PyTorch, GDB, Wireshark, Git, WinDbg, GitHub Actions, Valgrind, LLVM,
      Linux, Unix, Socket, Shell, Makefile, Boost.Asio, OpenMP, Open MPI, OpenCL, Pthread, gprof, Selenium,
-     Flask, RESTful, Jest, Docker, Docker Swarm, MongoDB}
+     Flask, RESTful, Jest, Docker, Docker Swarm, MongoDB, OpenCV, OpenGL}
   \resumeSubHeadingListEnd
 
 %-------------------------------------------
