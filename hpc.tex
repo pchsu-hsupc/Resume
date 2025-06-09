@@ -93,15 +93,15 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://github.com/pchsu0214}{\Large Po-Chi, Hsu}} & Email: \href{mailto:hpc880214@gmail.com}{hpc880214@gmail.com}\\
-  \href{https://github.com/pchsu0214}{https://github.com/pchsu0214} & Mobile: \href{tel:+886912129381}{+886-912-129-381} \\
+  \textbf{\href{https://github.com/pchsu-hsupc}{\Large Po-Chi, Hsu}} & Email: \href{mailto:hpc880214@gmail.com}{hpc880214@gmail.com}\\
+  \href{https://github.com/pchsu-hsupc}{https://github.com/pchsu-hsupc} & Mobile: \href{tel:+886912129381}{+886-912-129-381} \\
 \end{tabular*}
 
-\vspace{0.5em}
-\begin{flushleft}
-Eager to learn new software development technologies and apply tools to implement algorithms, with proven teamwork skills
-and the ability to simplify complex concepts through internships and teaching assistants.
-\end{flushleft}
+% \vspace{0.5em}
+% \begin{flushleft}
+% Eager to learn new software development technologies and apply tools to implement algorithms, with proven teamwork skills
+% and the ability to simplify complex concepts through internships and teaching assistants.
+% \end{flushleft}
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -135,7 +135,7 @@ and the ability to simplify complex concepts through internships and teaching as
       \resumeItemListStart
         \resumeItem{Embedded Systems Capstone}{}
         \resumeItem{IoT Devices and Platforms}{}
-        \resumeItem{Discrete Mathematics}{}
+        \resumeItem{Discrete Mathematics - Tutor foreign student}{}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -173,12 +173,18 @@ and the ability to simplify complex concepts through internships and teaching as
     \resumeSubItem{Ported a Modern C++ ray‑tracing engine to CUDA}
       {Refactoring CPU std::vector usage into custom GPU pointer‑to‑pointer structures 
        and rewriting the recursive pixel‑reflection routine as an iterative algorithm to prevent GPU stack overflows.
-       Provides a 12x speedup over a single-threaded CPU, and 6x speedup over OpenMP/Pthreads in high-resolution (4K/8K) rendering workflows.}
+       Provides a \textbf{12x} speedup over a single-threaded CPU, and \textbf{6x} speedup over OpenMP/Pthreads in high-resolution (4K/8K) rendering workflows.}
     \resumeSubItem{Event Management Platform}
       {Developed a Flask-based user authentication microservice with RESTful APIs for an event management platform, enabling user registration, login, and logout.
       Integrated MongoDB for secure and scalable data persistence.
       Implemented unit and integration tests using Python’s unittest and JavaScript's Jest to ensure API reliability. 
-      Deployed and orchestrated microservices using Docker Swarm for efficient scalability and maintainability.}  
+      Deployed and orchestrated microservices using Docker Swarm for efficient scalability and maintainability.} 
+    \resumeSubItem{Large Language Model Acceleration}
+      {On NVIDIA T4 GPUs, 
+      we successfully accelerated inference of the LLaMA-3.2 3B model by combining quantization, FlashAttention, KV-cache optimization, 
+      and deploying it with a more efficient serving framework, llama.cpp.
+      As a result, throughput improved from approximately 29 tokens/sec to over 73 tokens/sec, achieving a \textbf{2.7×} speed-up. 
+      Additionally, by incorporating QLoRA fine-tuning, we were able to further reduce perplexity, enhancing model quality.}
     %\resumeSubItem{Software Testing}
       %{Engineered tests using unittest with mock, spies, and exception handling.
       %Developed web surfing automation scripts with Selenium.
@@ -197,8 +203,8 @@ and the ability to simplify complex concepts through internships and teaching as
 %--------SKILLS------------
 \section{Skills}
   \resumeSubHeadingListStart
-  \resumeSubItem{Languages}
-    {Mandarin (Native Language), English, Norwegian}
+  % \resumeSubItem{Languages}
+  %   {Mandarin (Native Language), English, Norwegian}
   \resumeSubItem{Courses}
     {
       Physical Design Automation (A+), Parallel Programming (A+), Software Testing (A+), Cloud Native Development (A+), Network Programming (A+),
