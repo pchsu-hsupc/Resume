@@ -29,8 +29,9 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.5in}
+\addtolength{\footskip}{-0.3in} 
 
 \urlstyle{same}
 
@@ -40,8 +41,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % Ensure that generate PDF is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -63,11 +64,11 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -84,7 +85,6 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -94,7 +94,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://github.com/pchsu-hsupc}{\Large Po-Chi, Hsu}} & Email: \href{mailto:hpc880214@gmail.com}{hpc880214@gmail.com}\\
-  \href{https://github.com/pchsu-hsupc}{https://github.com/pchsu-hsupc} & Mobile: \href{tel:+886912129381}{+886-912-129-381} \\
+  \href{https://github.com/pchsu-hsupc}{\underline{https://github.com/pchsu-hsupc}} & Mobile: \href{tel:+886912129381}{+886-912-129-381} \\
 \end{tabular*}
 
 % \vspace{0.5em}
@@ -120,6 +120,15 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {\href{https://sciwork.dev/}{\underline{Sciwork}}}{Hsinchu, TW}
+      {\href{https://github.com/solvcon/modmesh}{\underline{Modmesh's Contributor}}}{April 2025 -- Now}
+      \resumeItemListStart
+        \resumeItem{\href{https://github.com/solvcon/modmesh/pull/535}{\underline{Array Searching Operations} (argwhere, where, argmax, argmin)}}
+          {Implemented high-performance C++ multi-dimensional array search primitives,
+           and exposed them to Python via Pybind11, leveraging profiling-driven optimizations to achieve NumPy-comparable performance.}
+        \resumeItemListEnd
+
+    \resumeSubheading
       {Mediatek}{ChuPei, TW}
       {Software Engineer Intern (Windows Wi-Fi Driver)}{July 2023 -- Aug 2023}
       \resumeItemListStart
@@ -133,8 +142,7 @@
       {National Yang Ming Chiao Tung University}{Hsinchu, TW}
       {Teaching Assistants}{Sep 2022 -- Jun 2024}
       \resumeItemListStart
-        \resumeItem{Embedded Systems Capstone}{}
-        \resumeItem{IoT Devices and Platforms}{}
+        \resumeItem{Embedded Systems Capstone, IoT Devices and Platforms}{}
         \resumeItem{Discrete Mathematics - Tutor foreign student}{}
       \resumeItemListEnd
 
@@ -176,7 +184,7 @@
        Provides a \textbf{12x} speedup over a single-threaded CPU, and \textbf{6x} speedup over OpenMP/Pthreads in high-resolution (4K/8K) rendering workflows.}
     \resumeSubItem{Event Management Platform}
       {Developed a Flask-based user authentication microservice with RESTful APIs for an event management platform, enabling user registration, login, and logout.
-      Integrated MongoDB for secure and scalable data persistence.
+      Integrated MongoDB for secure and scalable data persistence and Implemented an automated CI pipeline in GitHub Actions that tested and built the application.
       Implemented unit and integration tests using Python’s unittest and JavaScript's Jest to ensure API reliability. 
       Deployed and orchestrated microservices using Docker Swarm for efficient scalability and maintainability.} 
     \resumeSubItem{Large Language Model Acceleration}
@@ -216,5 +224,6 @@
      Flask, RESTful, Jest, Docker, Docker Swarm, MongoDB, OpenCV, OpenGL}
   \resumeSubHeadingListEnd
 
+\vspace*{\fill} 
 %-------------------------------------------
 \end{document}
